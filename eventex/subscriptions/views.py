@@ -33,7 +33,6 @@ def create(request):
                'subscriptions/subscription_email.txt',
                {'subscription': subscription})
 
-
     return HttpResponseRedirect('/inscricao/{}/'.format(subscription.pk))
 
 
