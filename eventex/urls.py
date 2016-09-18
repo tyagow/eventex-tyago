@@ -4,7 +4,7 @@ from eventex.core.views import home
 
 urlpatterns = [
     url(r'^$', home, name='home'),
-    url(r'^incricao/', include('eventex.subscriptions.urls',
+    url(r'^inscricao/', include('eventex.subscriptions.urls',
                                namespace='subscriptions')),
     url(r'^admin/', admin.site.urls),
 ]
