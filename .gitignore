@@ -7,3 +7,4 @@ __pycache__
 staticfiles
 .ipynb_checkpoints/
 Untitled.ipynb
+urlquest.py
