@@ -15,3 +15,6 @@ class SubscriptionForm(forms.Form):
     email = forms.EmailField(label='Email')
     phone = forms.CharField(label='Telefone')
 
+    def clean_name(self):
+        name = self.cleaned_data['name']
+        return name.title()
