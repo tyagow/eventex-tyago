@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Amazon storage packege
-    'storages',
+    # 'storages',
     'django_extensions',
     'test_without_migrations',
     'eventex.core',
