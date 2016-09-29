@@ -35,27 +35,10 @@
 	<body>
 
         <div class="header-frame header-frame-absolute  row">
-            <header class="header header-inline min-h-3 row desktop-12 container" role="banner">
-
-                <div class="site-logo">
-                    <h1><a href="{% url 'home' %}" rel="home">Eventex</a></h1>
-                    <p class="site-description screen-reader-only">O maior encontro hacker do mundo!</p>
-                </div>
-
-                <nav class="nav-inline" role="navigation">
-                    <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
-                    <ul>
-                        <li><a data-scroll href="#overview">Conferência</a></li>
-                        <li><a data-scroll href="#sponsors">Patrocinadores</a></li>
-                        <li><a data-scroll href="#register">Inscrição</a></li>
-                        <li><a data-scroll href="#venue">Local</a></li>
-                    </ul>
-                </nav>
-
-            </header>
+            {% include 'nav.html' %}
         </div>
 
-      	<!-- TOP -->
+    <!-- TOP -->
         <section id="top" data-stellar-background-ratio="0.5">
         	<div class="countdown text-align-center row desktop-12 container">
             	<h1 class="uppercase">Eventex</h1>
@@ -72,7 +55,21 @@
             	<p><a class="btn-basic btn-blue" data-scroll href="#register">Garanta a sua vaga!</a></p>
             </div>
         </section>
-
+        <section class="speakers">
+            <div class="speakers text-align-center row desktop-8 padding-bottom-2 container">
+                <h2>Palestrantes Convidados</h2>
+                {% for speaker in speakers %}
+                <div class="desktop-4">
+                    <img src="{{ speaker.photo }}" alt="">
+                    <h4>{{ speaker.name }}</h4>
+                </div>
+                {% endfor %}
+                <div class="desktop-4">
+                    <img src="http://hbn.link/turing-pic" alt="">
+                    <h4>Alan Turing</h4>
+                </div>
+            </div>
+        </section>
         <!-- SPONSORS -->
         <section id="sponsors">
         	<div class="sponsors text-align-center row desktop-12 min-h-28 padding-bottom-2 container">
