@@ -366,4 +366,8 @@ section header h2 {
     width: 200px;
     border-radius: 80%;
 }
+.speakers img.photo {
+    float: left;
+    padding-right: 15px;
+}
 /* Fim Customização */

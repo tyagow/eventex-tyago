@@ -29,6 +29,7 @@ class SubscriptionDetailGet(TestCase):
             for expected in contents:
                 self.assertContains(self.resp, expected)
 
+
 class SubscriptionDetailNotFound(TestCase):
     def test_not_found(self):
         resp = self.client.get(r('subscriptions:detail', 0))
