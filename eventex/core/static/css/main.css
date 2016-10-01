@@ -370,4 +370,14 @@ section header h2 {
     float: left;
     padding-right: 15px;
 }
+.talks h4 {
+    min-height: 0;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+.talks h3 {
+    min-height: 0;
+    padding: 0;
+}
 /* Fim Customização */
