@@ -2,7 +2,7 @@
 
 Sistema de Eventos encomendando pela Morena.
 
-[![Build Status](https://travis-ci.org/tyagow/eventex-tyago.svg?branch=master)](https://travis-ci.org/tyagow/eventex-tyago)  [![Code Health](https://landscape.io/github/tyagow/eventex-tyago/master/landscape.svg?style=flat)](https://landscape.io/github/tyagow/eventex-tyago/master)
+[![Build Status](https://travis-ci.org/tyagow/eventex-revisao.svg?branch=master)](https://travis-ci.org/tyagow/eventex-revisao)  [![Code Health](https://landscape.io/github/tyagow/eventex-revisao/master/landscape.svg?style=flat)](https://landscape.io/github/tyagow/eventex-tyago/master)
 
 ## Como desenvolver ?
 
@@ -11,7 +11,7 @@ Sistema de Eventos encomendando pela Morena.
 3. Ative o Virtualenv.
 4. Instale as dependencias.
 5. Configure a instancia com o .env
-6. Ecevute os testes.
+6. Execute os testes.
 
 ```console
 git clone git@github.com:tyagow/eventex-tyago.git wttd
